@@ -16,11 +16,11 @@ export function RepositoryList(){
     return (
         <section className="repository-list">
             <h1>Lista de repositórios</h1>
-            <ul>
+            <ul className="list-group">
                 {repositories.map(repository => {
                     return <RepositoryItem key={repository.name} repository={repository} />
-                })}    
-            </ul>
+                })}
+            </ul>   
         </section>
     );
 }
